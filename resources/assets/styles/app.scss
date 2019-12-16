@@ -1,0 +1,41 @@
+.loader {
+  border: 12px solid #f3f3f3; /* Light grey */
+  border-top: 12px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite;
+  display: none;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.datatable {
+  margin-bottom: 8em;
+}
+
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: #373a48;
+    position: fixed;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 18px;
+    z-index: 3; // Pagination .active>a has z-index: 2
+}
+
+footer .social-networks .fa-github {
+    transition: 0.2s;
+    text-decoration: none;
+    font-size: 2.5em;
+    color: white;
+    &:hover {
+        color: #00aced;
+    }
+}
